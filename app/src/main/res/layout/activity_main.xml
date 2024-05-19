@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:textSize="20dp"
+        android:id="@+id/txtSearch"
+        />
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="489dp"
+        tools:listitem="@layout/list_taxi_item"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/baseline_add_24"
+        android:background="#FFC0CB"
+        />
+
+</LinearLayout>
